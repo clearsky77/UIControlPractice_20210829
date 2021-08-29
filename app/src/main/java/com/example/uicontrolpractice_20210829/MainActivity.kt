@@ -15,5 +15,9 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, inputMessage, Toast.LENGTH_SHORT).show()
             messageEdt.text.get(3)
         }
+
+//      받은 메시지를 텍스트 뷰로 화면에 반영하기
+
+
     }
 }
