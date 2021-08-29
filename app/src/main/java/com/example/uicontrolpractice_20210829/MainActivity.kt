@@ -13,11 +13,16 @@ class MainActivity : AppCompatActivity() {
         toastBtn.setOnClickListener {
             var inputMessage = messageEdt.text.toString()
             Toast.makeText(this, inputMessage, Toast.LENGTH_SHORT).show()
-            messageEdt.text.get(3)
         }
 
 //      받은 메시지를 텍스트 뷰로 화면에 반영하기
+        copyMessageBtn.setOnClickListener {
+//            입력한 내용 변수에 저장
+            val inputMessage = messageEdt.text.toString()
+//            텍스트 뷰의 text 속성에 내용을 대입(set)
+            messageText.text = inputMessage
 
+        }
 
     }
 }
