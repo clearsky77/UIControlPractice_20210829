@@ -13,13 +13,7 @@ class MainActivity : AppCompatActivity() {
         toastBtn.setOnClickListener {
             var inputMessage = messageEdt.text.toString()
             Toast.makeText(this, inputMessage, Toast.LENGTH_SHORT).show()
-
+            messageEdt.text.get(3)
         }
-
-
     }
-
-
-
-
 }
